@@ -11,12 +11,13 @@
 #' @importFrom labelled to_factor
 #' @importFrom survey svymean
 #' @importFrom survey svytotal
+#' @importFrom survey svydesign
 #' @importFrom tibble tibble
 #' @export
 #' @examples
 #' data("df_example")
 #' ## Gebruik je survey-design zoals het is
-#' design <- svydesign(
+#' design <- survey::svydesign(
 #'  id      = ~RESPNR,          # of ID
 #'  weights = ~WT1,             # jouw gewichtvariabele
 #'  data    = df_example        # jouw dataset
