@@ -21,6 +21,7 @@ voor een categorische variabele binnen een survey-design.
 \examples{
 data("df_example")
 library(survey)
+library(trimbosR)
 ## Gebruik je survey-design zoals het is
 design <- survey::svydesign(
  id      = ~RESPNR,          # of ID
