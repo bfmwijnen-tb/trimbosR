@@ -1,0 +1,19 @@
+---
+title: "weighted_percentages"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{weighted_percentages}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(trimbosR)
+```

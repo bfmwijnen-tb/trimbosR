@@ -21,7 +21,7 @@ voor een categorische variabele binnen een survey-design.
 \examples{
 data("df_example")
 ## Gebruik je survey-design zoals het is
-design <- svydesign(
+design <- survey::svydesign(
  id      = ~RESPNR,          # of ID
  weights = ~WT1,             # jouw gewichtvariabele
  data    = df_example        # jouw dataset
