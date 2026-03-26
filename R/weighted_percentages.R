@@ -16,6 +16,7 @@
 #' @export
 #' @examples
 #' data("df_example")
+#' library(survey)
 #' ## Gebruik je survey-design zoals het is
 #' design <- survey::svydesign(
 #'  id      = ~RESPNR,          # of ID
@@ -23,7 +24,7 @@
 #'  data    = df_example        # jouw dataset
 #')
 #'## Gebruik voor één variabele:
-#' calc_prevalentie_gewogen("yypandi_Ax1", design)
+#' calc_prevalentie_gewogen("smoke", design)
 #'
 calc_percentage_gewogen <- function(var, dsgn) {
 
