@@ -1,5 +1,5 @@
 
-#'  FUNCTIE: calc_prevalentie_gewogen()
+#'  FUNCTIE: calc_percentage_gewogen()
 #'
 #'  Doel: Gewogen aantallen en percentages berekenen
 #'  voor een categorische variabele binnen een survey-design.
@@ -25,7 +25,7 @@
 #'  data    = df_example        # jouw dataset
 #')
 #'## Gebruik voor één variabele:
-#' calc_prevalentie_gewogen("smoke", design)
+#' calc_percentage_gewogen("smoke", design)
 #'
 calc_percentage_gewogen <- function(var, dsgn) {
 

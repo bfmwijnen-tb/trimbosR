@@ -2,7 +2,7 @@
 % Please edit documentation in R/weighted_percentages.R
 \name{calc_percentage_gewogen}
 \alias{calc_percentage_gewogen}
-\title{FUNCTIE: calc_prevalentie_gewogen()}
+\title{FUNCTIE: calc_percentage_gewogen()}
 \usage{
 calc_percentage_gewogen(var, dsgn)
 }
@@ -29,6 +29,6 @@ design <- survey::svydesign(
  data    = df_example        # jouw dataset
 )
 ## Gebruik voor één variabele:
-calc_prevalentie_gewogen("smoke", design)
+calc_percentage_gewogen("smoke", design)
 
 }
