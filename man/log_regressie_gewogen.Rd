@@ -35,7 +35,7 @@ nest = TRUE
 )
 ###  Gebruik voor één of meerdere uitkomstmaten:
 log_regressie_gewogen(
-dep = c("geslacht"),                # afhankelijke vars
+dep = "geslacht",                   # afhankelijke vars
 ind = "leeftijd",                   # onafhankelijke var
 correct = "xgender",                # covariaten
 design = design                     # survey-design
