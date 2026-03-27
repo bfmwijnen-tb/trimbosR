@@ -28,8 +28,8 @@
 #' )
 #' ###  Gebruik voor één of meerdere uitkomstmaten:
 #' log_regressie_gewogen(
-#' dep = "geslacht",                   # afhankelijke vars
-#' ind = "leeftijd",                   # onafhankelijke var
+#' dep = c("yypandi_Ax1", "yypANAN"),  # afhankelijke vars
+#' ind = "yeducat",                    # onafhankelijke var
 #' correct = "xgender",                # covariaten
 #' design = design                     # survey-design
 #' )
