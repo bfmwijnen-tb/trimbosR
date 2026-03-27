@@ -21,4 +21,5 @@ Doel:Ongewogen aantallen en percentages berekenen voor één of meerdere categor
 }
 \examples{
 Hier moet nog een voorbeeld komen
+
 }

@@ -14,7 +14,7 @@
 #' @export
 #' @examples
 #' Hier moet nog een voorbeeld komen
-
+#'
 calc_percentage_ongewogen <- function(vars, data, include_na = FALSE) {
 
   # Check input
