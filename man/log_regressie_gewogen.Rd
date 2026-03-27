@@ -26,7 +26,7 @@ library(trimbosR)
 data("df_log_weighted")
 library(survey)
 ## Survey-design instellen
-design <- svydesign(
+design <- survey::svydesign(
 ids = ~xgemnr,
 strata = ~xlandsdeel,
 weights = ~WT1,

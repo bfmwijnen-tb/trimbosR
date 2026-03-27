@@ -8,6 +8,8 @@
 #'
 #' @return Tabel met per uitkomstmaat en per vergelijking
 #' @importFrom survey svyglm
+#' @importFrom survey svytotal
+#' @importFrom survey svydesign
 #' @importFrom dplyr case_when
 #' @importFrom dplyr bind_rows
 #' @importFrom tibble tibble
@@ -17,7 +19,7 @@
 #' data("df_log_weighted")
 #' library(survey)
 #' ## Survey-design instellen
-#' design <- svydesign(
+#' design <- survey::svydesign(
 #' ids = ~xgemnr,
 #' strata = ~xlandsdeel,
 #' weights = ~WT1,
