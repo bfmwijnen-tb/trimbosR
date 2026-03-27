@@ -2,9 +2,12 @@
 
 export(calc_percentage_gewogen)
 export(calc_percentage_ongewogen)
+export(log_regressie_gewogen)
 importFrom(dplyr,bind_rows)
+importFrom(dplyr,case_when)
 importFrom(labelled,to_factor)
 importFrom(survey,svydesign)
+importFrom(survey,svyglm)
 importFrom(survey,svymean)
 importFrom(survey,svytotal)
 importFrom(tibble,tibble)
