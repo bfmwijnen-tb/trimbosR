@@ -13,10 +13,10 @@
 #' @importFrom tibble tibble
 #' @export
 #' @examples
+#' library(trimbosR)
 #' data("df_log_weighted")
 #' library(survey)
-#' library(trimbosR)
-#' Survey-design instellen
+#' ## Survey-design instellen
 #' design <- svydesign(
 #' ids = ~xgemnr,
 #' strata = ~xlandsdeel,

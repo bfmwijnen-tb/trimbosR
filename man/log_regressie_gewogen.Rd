@@ -22,10 +22,10 @@ Tabel met per uitkomstmaat en per vergelijking
 De functie is bedoeld om gewogen logistische regressies uit te voeren voor één of meerdere binaire uitkomstmaten, met een categorische voorspeller met twee of meer niveaus. Het uitvoeren van gewogen logistische regressies zonder interacties voor meerdere binaire uitkomstmaten. Voor elke uitkomstmaat worden alle unieke paarsgewijze vergelijkingen tussen de niveaus van een categorische onafhankelijke variabele uitgevoerd (bijv. bij 3 niveaus: 3 vergelijkingen).
 }
 \examples{
+library(trimbosR)
 data("df_log_weighted")
 library(survey)
-library(trimbosR)
-Survey-design instellen
+## Survey-design instellen
 design <- svydesign(
 ids = ~xgemnr,
 strata = ~xlandsdeel,
