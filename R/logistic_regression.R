@@ -19,6 +19,10 @@
 #' data("df_example")
 #' library(survey)
 #' df_example$Education[df_example$Education == "NA" | is.na(df_example$Education)] <- "unknown" ## Missende waarde opvullen
+#' df_example$Marijuana <- ifelse(df_example$Marijuana == "YES", 1,
+#' ifelse(df_example$Marijuana == "NO", 0, NA))  ## Change YES/NO to 1 - 0 (still includes NAs)
+#' df_example$HardDrugs <- ifelse(df_example$HardDrugs == "YES", 1,
+#' ifelse(df_example$HardDrugs == "NO", 0, NA))  ## Change YES/NO to 1 - 0 (still includes NAs)
 #' ## Survey-design instellen
 #' design <- survey::svydesign(
 #' ids = ~ID,
