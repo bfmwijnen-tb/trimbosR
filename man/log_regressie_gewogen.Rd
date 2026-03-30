@@ -25,6 +25,7 @@ De functie is bedoeld om gewogen logistische regressies uit te voeren voor één
 library(trimbosR)
 data("df_example")
 library(survey)
+df_example$Education[df_example$Education == "NA" | is.na(df_example$Education)] <- "unknown" ## Missende waarde opvullen
 ## Survey-design instellen
 design <- survey::svydesign(
 ids = ~ID,

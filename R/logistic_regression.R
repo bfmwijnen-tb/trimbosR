@@ -18,6 +18,7 @@
 #' library(trimbosR)
 #' data("df_example")
 #' library(survey)
+#' df_example$Education[df_example$Education == "NA" | is.na(df_example$Education)] <- "unknown" ## Missende waarde opvullen
 #' ## Survey-design instellen
 #' design <- survey::svydesign(
 #' ids = ~ID,
