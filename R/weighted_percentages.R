@@ -13,7 +13,7 @@
 #' @importFrom survey svytotal
 #' @importFrom survey svydesign
 #' @importFrom tibble tibble
-#' @export
+#' @export calc_percentage_gewogen
 #' @examples
 #' data("df_example")
 #' library(survey)

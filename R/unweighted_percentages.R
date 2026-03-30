@@ -11,7 +11,7 @@
 #' @importFrom labelled to_factor
 #' @importFrom dplyr bind_rows
 #' @importFrom tibble tibble
-#' @export
+#' @export calc_percentage_ongewogen
 #' @examples
 #' Hier moet nog een voorbeeld komen
 #'

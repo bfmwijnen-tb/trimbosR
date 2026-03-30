@@ -13,7 +13,7 @@
 #' @importFrom dplyr case_when
 #' @importFrom dplyr bind_rows
 #' @importFrom tibble tibble
-#' @export
+#' @export log_regressie_gewogen
 #' @examples
 #' library(trimbosR)
 #' data("df_log_weighted")
