@@ -20,17 +20,17 @@
 #' library(survey)
 #' ## Survey-design instellen
 #' design <- survey::svydesign(
-#' ids = ~xgemnr,
-#' strata = ~xlandsdeel,
+#' ids = ~ID,
+#' strata = ~Education,
 #' weights = ~WT1,
 #' data = df_log_weighted,
 #' nest = TRUE
 #' )
 #' ###  Gebruik voor één of meerdere uitkomstmaten:
 #' log_regressie_gewogen(
-#' dep = c("yypandi_Ax1", "yypANAN"),  # afhankelijke vars
-#' ind = "yeducat",                    # onafhankelijke var
-#' correct = "xgender",                # covariaten
+#' dep = c("HardDrugs", "Marijuana"),  # afhankelijke vars
+#' ind = "Age",                        # onafhankelijke var
+#' correct = "Gender",                 # covariaten
 #' design = design                     # survey-design
 #' )
 #'

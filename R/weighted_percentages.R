@@ -20,12 +20,12 @@
 #' library(trimbosR)
 #' ## Gebruik je survey-design zoals het is
 #' design <- survey::svydesign(
-#'  id      = ~RESPNR,          # of ID
+#'  id      = ~ID,              # of ID
 #'  weights = ~WT1,             # jouw gewichtvariabele
 #'  data    = df_example        # jouw dataset
 #')
 #'## Gebruik voor één variabele:
-#' calc_percentage_gewogen("smoke", design)
+#' calc_percentage_gewogen("HardDrugs", design)
 #'
 calc_percentage_gewogen <- function(var, dsgn) {
 
