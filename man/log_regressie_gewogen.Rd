@@ -25,24 +25,26 @@ De functie is bedoeld om gewogen logistische regressies uit te voeren voor één
 library(trimbosR)
 data("df_example")
 library(survey)
-df_example$Education[df_example$Education == "NA" | is.na(df_example$Education)] <- "unknown" ## Missende waarde opvullen
-df_example$Marijuana <- ifelse(df_example$Marijuana == "YES", 1,
-ifelse(df_example$Marijuana == "NO", 0, NA))  ## Change YES/NO to 1 - 0 (still includes NAs)
-df_example$HardDrugs <- ifelse(df_example$HardDrugs == "YES", 1,
-ifelse(df_example$HardDrugs == "NO", 0, NA))  ## Change YES/NO to 1 - 0 (still includes NAs)
+
+df_example$Marijuana <- ifelse(df_example$Marijuana == "Yes", 1,
+ifelse(df_example$Marijuana == "No", 0, NA))  ## Change Yes/No to 1 - 0 (still includes NAs)
+df_example$SmokeNow <- ifelse(df_example$SmokeNow == "Yes", 1,
+ifelse(df_example$SmokeNow == "No", 0, NA))  ## Change Yes/No to 1 - 0 (still includes NAs)
+vars <- c("ID", "SmokeNow", "Marijuana", "Age", "MaritalStatus", "Gender") ## Optional: select complete cases for the model
+df_example <- df_example[complete.cases(df_example[, vars]), ] ## Select complete cases
 ## Survey-design instellen
 design <- survey::svydesign(
 ids = ~ID,
-strata = ~Education,
+strata = ~Gender,
 weights = ~WT1,
 data = df_example,
 nest = TRUE
 )
 ###  Gebruik voor één of meerdere uitkomstmaten:
 log_regressie_gewogen(
-dep = c("HardDrugs", "Marijuana"),  # afhankelijke vars
+dep = c("Marijuana", "SmokeNow"),   # afhankelijke vars
 ind = "Age",                        # onafhankelijke var
-correct = "Gender",                 # covariaten
+correct = "MaritalStatus",          # covariaten
 design = design                     # survey-design
 )
 
