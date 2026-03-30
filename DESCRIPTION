@@ -1,5 +1,5 @@
 Package: trimbosR
-Title: What the Package Does (One Line, Title Case)
+Title: trimbosR: Toolbox for analyses at Trimbos-instituut.
 Version: 0.0.1
 Authors@R: 
     person("Ben", "Wijnen", , "bwijnen@trimbos.nl", role = c("aut", "cre"))
