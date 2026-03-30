@@ -16,14 +16,14 @@
 #' @export log_regressie_gewogen
 #' @examples
 #' library(trimbosR)
-#' data("df_log_weighted")
+#' data("df_example")
 #' library(survey)
 #' ## Survey-design instellen
 #' design <- survey::svydesign(
 #' ids = ~ID,
 #' strata = ~Education,
 #' weights = ~WT1,
-#' data = df_log_weighted,
+#' data = df_example,
 #' nest = TRUE
 #' )
 #' ###  Gebruik voor één of meerdere uitkomstmaten:

@@ -23,14 +23,14 @@ De functie is bedoeld om gewogen logistische regressies uit te voeren voor één
 }
 \examples{
 library(trimbosR)
-data("df_log_weighted")
+data("df_example")
 library(survey)
 ## Survey-design instellen
 design <- survey::svydesign(
 ids = ~ID,
 strata = ~Education,
 weights = ~WT1,
-data = df_log_weighted,
+data = df_example,
 nest = TRUE
 )
 ###  Gebruik voor één of meerdere uitkomstmaten:
